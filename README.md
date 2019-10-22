@@ -1,0 +1,1 @@
+# pixi.js-v5-TypeScript-starter
