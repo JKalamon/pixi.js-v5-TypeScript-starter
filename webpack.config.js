@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 require('webpack');
 const ROOT = path.resolve(__dirname, 'src');
 const DESTINATION = path.resolve(__dirname, 'dist');
@@ -19,7 +20,11 @@ module.exports = {
     extensions: ['.ts', '.js'],
     modules: [ROOT, 'node_modules'],
   },
-
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'PIXI.js with typescript starter',
+    })
+  ],
   module: {
     rules: [
       {
