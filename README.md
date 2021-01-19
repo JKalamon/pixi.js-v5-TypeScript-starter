@@ -10,4 +10,4 @@ This is a simple starter kit to work with PIXI.js v5 and TypeScript.
 
 # Production build
 
-    to be updated...
+    npm run build
